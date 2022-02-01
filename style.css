@@ -1,0 +1,41 @@
+body {
+    font-size: 30pt;
+    margin-left: 100;
+    }
+li {
+    margin: 30px 0;
+    }
+a {
+    text-decoration: none;
+    color: black;
+    }
+a:hover {
+    color: blue;
+    }
+select {
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 30pt;
+	font-family: courier new;
+}
+button {
+	color: blue;
+	background-color: white;
+	border: 3px solid blue;
+	border-radius: 7px;
+	transition-duration: 0.8s;
+	font-family: courier new;
+	font-size: 50;
+}
+button:hover {
+	background-color: lightcyan;
+}
+button:active {
+	background-color: skyblue;
+	transition-duration: 0.1s;
+}
+input {
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 30pt;
+}
