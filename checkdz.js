@@ -4,7 +4,7 @@ class Task {
 	constructor(num,ans) {
 		this.num = num;
 		if(empty_str(ans)) {
-			ans = '&ndash;';
+			ans = '&mdash;';
 		}
 		this.ans = ans;
 	}
