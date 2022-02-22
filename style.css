@@ -3,7 +3,7 @@ body {
     margin-left: 100;
     }
 li {
-    margin: 30px 0;
+    margin: 10px 0;
     }
 a {
     text-decoration: none;
@@ -25,7 +25,7 @@ button {
 	border-radius: 7px;
 	transition-duration: 0.8s;
 	font-family: courier new;
-	font-size: 50;
+	font-size: 30;
 }
 button:hover {
 	background-color: lightcyan;
@@ -38,4 +38,58 @@ input {
 	border: 1px solid blue;
 	border-radius: 5px;
 	font-size: 30pt;
+}
+table {
+	font-size: 20;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid black;
+	padding: 7px;
+}
+tr {
+	text-align: left;
+	vertical-align: top;
+}
+textarea {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+}
+.colortext {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+}
+.ansblock {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+	display: table;
+}
+.wrong {
+	color: red;
+}
+.right {
+	color: green;
+}
+.coment {
+	color: blue;
+}
+.h2like {
+	font-size: 30;
+	font-weight: bold;
 }

@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <title>Проверка ДЗ</title>
+        <link rel="stylesheet" href="style.css">
+		<script defer src="checkdz.js"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+	<body>
+		<h1>Проверка ДЗ</h1>
+        <table>
+			<tr>
+				<td style="text-align:center;color:blue"><h1><i>Часть 1</i></h1></td>
+				<td style="text-align:center;color:blue"><h1><i>Часть 2</i></h1></td>
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<h2>№ ДЗ</h2>
+							</td>
+							<td>
+								<h2>Ответы ученика</h2>
+								<button onclick="make_numbered('raw');edit('raw','raw_show')" style="font-size:15">1.2.3.</button>
+								<button onclick="undo_numbered('raw');edit('raw','raw_show')" style="font-size:15"><s>1.2.3.</s></button>
+								<button onclick="clear_('raw');edit('raw','raw_show')" style="font-size:15;margin-left:30px"><span class="wrong">&#10006;</span></button>
+							</td>
+							<td>
+								<h2>Верные ответы</h2>
+								<button onclick="check('dznum1','raw','raw_show',data1)">Сверить</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select id='dznum1' onchange="show_ans(this.value,data1,'ans1');edit('raw','raw_show')"></select>
+							</td>
+							<td>
+								<div hidden id='raw_show' class="colortext" contenteditable onclick="edit('raw','raw_show')"></div>
+								<textarea id='raw'></textarea>
+							</td>
+							<td>
+								<div readonly id='ans1' class="ansblock"></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="width:17cm">
+					<span class="h2like" style="margin-left:3cm;margin-right:0.5cm">№ ДЗ</span>
+					<select id="dznum2" size=1 onchange="action(this,'ans2',data2.answers)">
+					</select><br>
+					<div id='ans2'></div>
+				</td>
+			</tr>
+		</table>
+    </body>
+</html>
