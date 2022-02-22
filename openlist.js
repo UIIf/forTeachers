@@ -39,4 +39,4 @@ async function build_html(url) {
 	add_to_list(tests,diagnostic,'');
 	add_to_list(list,other,'<h2>');
 }
-build_html('https://raw.githubusercontent.com/AngryBro/MathTeacher/main/links.json');
+build_html('https://raw.githubusercontent.com/AngryBro/data/main/links.json');
