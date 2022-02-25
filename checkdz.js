@@ -302,5 +302,5 @@ async function build_html(url_data1,url_data2) {
 		select.innerHTML += options[i];
 	}
 }
-build_html('https://raw.githubusercontent.com/AngryBro/MathTeacher/main/part1.txt',
-		'https://raw.githubusercontent.com/AngryBro/MathTeacher/main/part2.txt');
+build_html('https://raw.githubusercontent.com/AngryBro/data/main/part1.txt',
+		'https://raw.githubusercontent.com/AngryBro/data/main/part2.txt');
