@@ -46,9 +46,12 @@
 				</td>
 				<td style="width:17cm">
 					<span class="h2like" style="margin-left:3cm;margin-right:0.5cm">№ ДЗ</span>
-					<select id="dznum2" size=1 onchange="action(this,'ans2',data2.answers)">
-					</select><br>
-					<div id='ans2'></div>
+					<select id="dznum2" size=1 onchange="action(this,'ans2',data2.answers)"></select>
+					<div class="scale_buttons">
+						<button style='margin-left:2cm' onclick="scale('ans2',-1,10)">-&#128269;</button>
+						<button onclick="scale('ans2',+1,10)">&#128270;+</button>
+					</div>
+					<div style="font-size:100%" id='ans2'></div>
 				</td>
 			</tr>
 		</table>

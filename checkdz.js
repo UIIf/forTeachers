@@ -12,6 +12,19 @@ class Task {
 		return String(this.num)+'. '+this.ans;
 	}
 }
+function scale(id,unit,step) {
+	var block = document.getElementById(id);
+	var size = block.getAttribute('style');
+	var temp = size.split(':');
+	temp = [temp[0],':',Number(temp[1].split('%')[0]),'%'];
+	if((unit>0)&&(temp[2]<=150)) {
+		temp[2] += step;
+	}
+	if((unit<0)&&(temp[2]>=70)) {
+		temp[2] -= step;
+	}
+	block.setAttribute('style',temp.join(''));
+}
 function abans(a,b) {
 	return 'а) '+math(a)+'; б) '+math(b)+'.';
 }

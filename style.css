@@ -93,3 +93,6 @@ textarea {
 	font-size: 30;
 	font-weight: bold;
 }
+.scale_buttons {
+	display: inline-block;
+}
